@@ -3,8 +3,8 @@ plugins {
   id("maven-publish")
 }
 
-group = "io.github.jonelo"
-version = "0.12.0"
+group = "io.github.Darkrai9x"
+version = "0.12.1"
 
 repositories {
   mavenCentral()
@@ -15,7 +15,7 @@ publishing {
     withType<MavenPublication> {
       pom {
         url.set("https://github.com/jonelo/jAdapterForNativeTTS")
-        name.set("jAdapterForNativeTTS")
+        name.set("jadapter-for-native-tts")
         scm {
           url.set("https://github.com/jonelo/jAdapterForNativeTTS")
         }
