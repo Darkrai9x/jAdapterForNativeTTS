@@ -22,11 +22,11 @@
  * SOFTWARE.
  */
 
-package io.github.jonelo.jAdapterForNativeTTS.engines;
+package io.github.jonelo.tts.engines;
 
-import io.github.jonelo.jAdapterForNativeTTS.engines.exceptions.SpeechEngineCreationException;
-import io.github.jonelo.jAdapterForNativeTTS.engines.exceptions.ParseException;
-import io.github.jonelo.jAdapterForNativeTTS.util.os.ProcessHelper;
+import io.github.jonelo.tts.engines.exceptions.SpeechEngineCreationException;
+import io.github.jonelo.tts.engines.exceptions.ParseException;
+import io.github.jonelo.tts.util.os.ProcessHelper;
 
 import java.io.IOException;
 import java.util.ArrayList;

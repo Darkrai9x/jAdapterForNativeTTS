@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package io.github.jonelo.jAdapterForNativeTTS.engines;
+package io.github.jonelo.tts.engines;
 
 public class VoicePreferences {
 

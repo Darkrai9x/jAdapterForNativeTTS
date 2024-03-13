@@ -22,11 +22,39 @@
  * SOFTWARE.
  */
 
-package io.github.jonelo.jAdapterForNativeTTS.engines.exceptions;
+package io.github.jonelo.tts.engines;
 
-public class ParseException extends Exception {
+import io.github.jonelo.tts.engines.exceptions.ParseException;
 
-        public ParseException(String string) {
-            super(string);
-        }
+import java.io.IOException;
+import java.util.List;
+
+public interface SpeechEngine {
+
+    // config
+    String getSayExecutable();
+
+    String[] getSayOptionsToSayText(String text);
+
+    String[] getSayOptionsToGetSupportedVoices();
+
+    Voice parse(String line) throws ParseException;
+
+    void findAvailableVoices() throws IOException, InterruptedException;
+
+    List<Voice> getAvailableVoices();
+
+    List<ParseException> getParseExceptions();
+
+    Voice findVoiceByPreferences(VoicePreferences voicePreferences);
+
+    void setRate(int rate) throws IllegalArgumentException;
+
+    // actions
+    void setVoice(String voice);
+
+    Process say(String text) throws IOException;
+
+    void stopTalking();
+
 }

@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2023 Johann N. Löfflmann
+ * Copyright (c) 2021 Johann N. Löfflmann
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,10 +22,11 @@
  * SOFTWARE.
  */
 
-package io.github.jonelo.jAdapterForNativeTTS.engines.exceptions;
+package io.github.jonelo.tts.engines.exceptions;
 
-public class SpeechEngineCreationException extends Exception {
-    public SpeechEngineCreationException(String string) {
-        super(string);
-    }
+public class ParseException extends Exception {
+
+        public ParseException(String string) {
+            super(string);
+        }
 }
